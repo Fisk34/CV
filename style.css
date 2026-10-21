@@ -1,7 +1,9 @@
 body{
-    font-family: Arial, Arial, Helvetica, sans-serif;
+    --bgcolour: rgb(230, 230, 230);
+    --drkcolour: rgb(50, 50, 50);
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    background: rgb(230, 230, 230);
+    background: var(--bgcolour);
     margin: 0;
     padding: 0;
     display: flex;
@@ -11,7 +13,8 @@ body{
     
 }
 .cv-subtitle{
-    background: rgb(230, 230, 230)
+    background: var(--bgcolour);
+    border-bottom: 2px solid var(--drkcolour);
 }
 @media (min-width: 1020px){
     main{
@@ -24,7 +27,6 @@ body{
     }
 }
 main{
-    
     margin-left: auto;
     margin-right: auto;
     background: rgb(245, 245, 245);
@@ -33,7 +35,7 @@ main{
     flex: 1;
 }
 header{
-    background: rgb(54, 54, 54);
+    background: var(--drkcolour);
     color: white;
     text-align: center;
 }
@@ -42,8 +44,8 @@ nav{
     font-weight: bold;
     position: sticky;
     top: 0;
-    background: rgb(230, 230, 230);
-    border-bottom: 1px solid rgb(168, 168, 168);
+    background: var(--bgcolour);
+    border-bottom: 1px solid var(--drkcolour);
     
 }
 nav ul{
@@ -62,21 +64,20 @@ nav a{
 }
 nav a.active{
     border-radius: 5px;
-    box-shadow: 0 0 6px rgb(0 0 0 / .2)
+    box-shadow: 0 0 6px rgb(0 0 0 / .2);
 }
 nav a:hover{
     background: rgb(168, 168, 168);
     border-radius: 5px;
 }
 img{
-    float: left;
     max-width: 100%;
     border-radius: 5px;
 }
 footer{
     text-align: center;
     font-weight: bold;
-    color: rgb(50, 50, 50);
+    color: var(--drkcolour);
     font-size: 80%;
 }
 ul{
@@ -86,12 +87,12 @@ ul{
     padding: 0%;
     text-align: left;
 }
-#container{
+#container-port{
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
     gap: 1rem;
 }
-#container > div{
+#container-port > div{
     padding: 1rem;
     margin: 0;
     display: flex;
@@ -107,4 +108,7 @@ ul{
 }
 .languages{
     font-weight: bold;
+}
+#abme{
+    float: left;
 }
