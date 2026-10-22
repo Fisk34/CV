@@ -1,4 +1,4 @@
-body{
+body {
     --bgcolour: rgb(230, 230, 230);
     --drkcolour: rgb(50, 50, 50);
     font-family: Arial, Helvetica, sans-serif;
@@ -7,26 +7,30 @@ body{
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
     min-height: 100vh;
     text-align: center;
-    
+
 }
-.cv-subtitle{
+
+.cv-subtitle {
     background: var(--bgcolour);
     border-bottom: 2px solid var(--drkcolour);
 }
-@media (min-width: 1020px){
-    main{
+
+@media (min-width: 1020px) {
+    main {
         width: 1020px;
     }
 }
-@media (min-width: 2040px){
-    main{
+
+@media (min-width: 2040px) {
+    main {
         width: 50%;
     }
 }
-main{
+
+main {
     margin-left: auto;
     margin-right: auto;
     background: rgb(245, 245, 245);
@@ -34,65 +38,75 @@ main{
     border-radius: 5px;
     flex: 1;
 }
-header{
+
+header {
     background: var(--drkcolour);
     color: white;
     text-align: center;
 }
 
-nav{
+nav {
     font-weight: bold;
     position: sticky;
     top: 0;
     background: var(--bgcolour);
     border-bottom: 1px solid var(--drkcolour);
-    
+
 }
-nav ul{
+
+nav ul {
     padding: 0%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     padding: 1rem;
     display: block;
     color: darkblue;
 
 }
-nav a.active{
+
+nav a.active {
     border-radius: 5px;
     box-shadow: 0 0 6px rgb(0 0 0 / .2);
 }
-nav a:hover{
+
+nav a:hover {
     background: rgb(168, 168, 168);
     border-radius: 5px;
 }
-img{
+
+img {
     max-width: 100%;
     border-radius: 5px;
 }
-footer{
+
+footer {
     text-align: center;
     font-weight: bold;
     color: var(--drkcolour);
     font-size: 80%;
 }
-ul{
+
+ul {
     display: table;
     margin-left: auto;
     margin-right: auto;
     padding: 0%;
     text-align: left;
 }
-#container-port{
+
+#container-port {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 1rem;
 }
-#container-port > div{
+
+#container-port>div {
     padding: 1rem;
     margin: 0;
     display: flex;
@@ -102,13 +116,16 @@ ul{
     background: bisque;
     border-radius: 5px;
 }
-.project{
+
+.project {
     height: 200px;
     width: auto;
 }
-.languages{
+
+.languages {
     font-weight: bold;
 }
-#abme{
+
+#abme {
     float: left;
 }
